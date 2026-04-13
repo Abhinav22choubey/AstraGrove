@@ -8,10 +8,12 @@ import Gallery from './components/Gallery'
 import Testimonials from './components/Testimonals'
 import ContactSection from './components/Contact'
 import Footer from './components/Footer'
+import SocialSidebar from './common/SocialSidebar'
 const App = () => {
   return (
     <div className=''>
       <Navbar/>
+      <SocialSidebar/>
       <Hero/>
       <Introduction/>
       <OurPrograms/>

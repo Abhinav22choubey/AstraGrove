@@ -7,7 +7,6 @@ const QuoteIcon = ({ className }) => (
     className={className}
     viewBox="0 0 24 24"
     fill="currentColor"
-    xmlns="http://www.w3.org/2000/svg"
   >
     <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
   </svg>
@@ -90,7 +89,7 @@ export default function Testimonials() {
 
   return (
     <section className="relative w-full bg-white py-16 overflow-hidden font-kanit">
-      <div className="w-full max-w-[1240px] mx-auto px-4 lg:px-8">
+      <div className="w-full max-w-[1400px] mx-auto px-6 lg:px-20">
 
         {/* Header */}
         <div className="flex flex-row items-center gap-3 mb-12 md:mb-[52px]">
@@ -105,35 +104,36 @@ export default function Testimonials() {
           {testimonialsData.map((card) => (
             <div
               key={card.id}
-              className={`relative w-[85vw] md:w-[378px] flex-none h-[280px] md:h-[232px] border-2 rounded-tl-[50px] rounded-br-[50px] overflow-hidden snap-center ${card.borderColor} bg-white flex flex-col`}
+              className={`relative w-[85vw] md:w-[378px] flex-none min-h-[260px] md:min-h-[232px] border-2 rounded-tl-[50px] rounded-br-[50px] overflow-hidden snap-center ${card.borderColor} bg-white flex flex-col`}
             >
               {/* Background Circles */}
-              <div className={`absolute w-[100px] h-[100px] rounded-full -top-9 -right-9 z-0 ${card.bgColor}`} />
-              <div className={`absolute w-[100px] h-[100px] rounded-full -bottom-9 -left-9 z-0 ${card.bgColor}`} />
+              <div className={`absolute w-[110px] h-[110px] rounded-full -top-12 -right-12 z-0 ${card.bgColor}`} />
+              <div className={`absolute w-[110px] h-[110px] rounded-full -bottom-12 -left-12 z-0 ${card.bgColor}`} />
 
-              <div className="relative z-10 w-full h-full flex flex-col pt-[21px] pb-[20px] px-6 md:px-[41px]">
+              {/* Content */}
+              <div className="relative z-10 w-full h-full flex flex-col justify-between py-6 px-6 md:px-8">
 
                 {/* Top Quote */}
-                <div className="w-full flex justify-start">
+                <div className="w-full flex justify-start pl-1">
                   <QuoteIcon
                     className={`w-5 h-5 ${card.bgColor.replace("bg-", "text-")} opacity-80`}
                   />
                 </div>
 
                 {/* Text */}
-                <div className="flex-1 flex items-center justify-center mt-[10px] md:mt-0">
-                  <p className="w-full md:w-[239px] text-[16px] md:text-[17px] font-light leading-[25px] text-black text-center px-2 md:px-0">
+                <div className="flex-1 flex items-center justify-center px-3 md:px-4">
+                  <p className="text-[15px] md:text-[16px] font-light leading-[24px] text-black text-center break-words">
                     {card.quote}
                   </p>
                 </div>
 
                 {/* Bottom */}
-                <div className="w-full flex justify-between items-end mt-4 md:mt-[10px] relative">
-                  <span className="text-[18px] md:text-[20px] leading-[30px] font-normal italic text-black md:ml-[31px]">
+                <div className="w-full flex justify-between items-end mt-4 pr-1">
+                  <span className="text-[16px] ml-10 md:text-[18px] leading-[26px] font-normal italic text-black">
                     {card.author}
                   </span>
                   <QuoteIcon
-                    className={`w-5 h-5 ${card.bgColor.replace("bg-", "text-")} rotate-180 opacity-80 md:mr-[18px]`}
+                    className={`w-5 h-5 ${card.bgColor.replace("bg-", "text-")} rotate-180 opacity-80`}
                   />
                 </div>
 

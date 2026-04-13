@@ -22,7 +22,7 @@ const galleryImages = [
 
 const Gallery = () => {
   return (
-    <div className="w-full max-w-[1400px] mx-auto py-12 relative overflow-hidden">
+    <div id='gallery' className="w-full max-w-[1400px] mx-auto py-12 relative overflow-hidden">
 
       {/* Header Section */}
       <div className="flex flex-row items-center gap-[12px] px-6 lg:px-20 mb-8 lg:mb-[32px]">

@@ -5,11 +5,11 @@ const Navbar = () => {
 
   // Link Data
   const navLinks = [
-    { name: 'Home', href: '#' },
-    { name: 'About', href: '#' },
-    { name: 'Academic', href: '#' },
-    { name: 'Gallery', href: '#' },
-    { name: 'Contact Us', href: '#' },
+    { name: 'Home', href: '#hero' },
+    { name: 'About', href: '#about' },
+    { name: 'Academic', href: '#academic' },
+    { name: 'Gallery', href: '#gallery' },
+    { name: 'Contact Us', href: '#contact' },
   ];
 
   return (

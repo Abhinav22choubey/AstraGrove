@@ -3,7 +3,7 @@ import SectionTitle from '../common/SectionTitle';
 import intro from "/Images/intro.jpg";
 const IntroductionSection = () => {
     return (
-        <section className="max-w-[1280px] mx-auto px-6 py-10 md:py-22 overflow-hidden">
+        <section  id="about" className="max-w-[1280px] mx-auto px-6 py-10 md:py-22 overflow-hidden">
             {/* Frame 10: Header Section */}
             <div className="flex items-center gap-[12px] mb-4 md:mb-10">
                 <SectionTitle text="Introduction" color="#FFB400" />

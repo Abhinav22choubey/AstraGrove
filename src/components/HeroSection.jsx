@@ -3,7 +3,7 @@ import cloud from "/Images/cloud.png";
 import herobg from "/Images/herobg.jpg";
 const Hero = () => {
     return (
-        <section className="relative w-full h-[671px]  min-h-[calc(100vh-80px)] overflow-hidden flex items-center justify-center">
+        <section  id="hero" className="relative w-full h-[671px]  min-h-[calc(100vh-80px)] overflow-hidden flex items-center justify-center">
             {/* 1. MAIN BACKGROUND IMAGE */}
             <div
                 className="absolute inset-0 bg-cover bg-center z-0"

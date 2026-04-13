@@ -86,7 +86,7 @@ const OurPrograms = () => {
         // To ensure fonts match perfectly, add Google Fonts to your index.html:
         // <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
 
-        <div className="w-full max-w-[1400px] mx-auto py-12 relative overflow-hidden">
+        <div id='academic' className="w-full max-w-[1400px] mx-auto py-12 relative overflow-hidden">
 
             {/* Header Section */}
             <div className="flex flex-row items-center gap-[12px] px-6 lg:px-20 mb-8">
